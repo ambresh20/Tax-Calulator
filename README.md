@@ -58,9 +58,13 @@ This project is a simple tax calculator built using Javascript that allows users
 </li>
 
 # Installation
-Clone this repository to your local machine using git clone https://github.com/ambresh20/tax-calculator.git
-Navigate to the project directory
-Run the tax_calculator script using Javascript.
+i). Clone this repository to your local machine using git clone 
+<br>
+ii). https://github.com/ambresh20/tax-calculator.git
+<br>
+iii). Navigate to the project directory 
+<br>
+iv). Run the tax_calculator script using Javascript.
 
 
 # Contributing
