@@ -1,5 +1,18 @@
 # Tax-Calulator
 
+## Demo 
+Link : https://tax-calculators.netlify.app/
+
+# Screenshot
+<h4>First Test Case</h4>
+<img width="548" alt="fist test case " src="https://github.com/ambresh20/Tax-Calulator/assets/90375507/d04ca053-5b94-4862-bf4e-1549c1e2d1f6">
+<img width="610" alt="2 test case " src="https://github.com/ambresh20/Tax-Calulator/assets/90375507/0790204d-d140-4015-8b45-25af7ef24bc5">
+
+<h4>Second Test Case</h4>
+<img width="523" alt="3rd test case" src="https://github.com/ambresh20/Tax-Calulator/assets/90375507/6eb847b3-7472-4ef3-8511-16266fa10cce">
+<img width="600" alt="4th test case" src="https://github.com/ambresh20/Tax-Calulator/assets/90375507/495eb4f9-c9a3-4a77-8609-d37ead8e4d96">
+
+
 # Overview
 This project is a simple tax calculator built using Javascript that allows users to calculate their income tax based on their income level and tax brackets. It provides a user-friendly command-line interface for inputting income data and displays the calculated tax amount.
 
