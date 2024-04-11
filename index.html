@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tax Calculator | Fyle</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Tax Calculator</h1>
+
+	<!-- main part of calculation tax -->
+    <div class="wrapper">
+
+        <form id="taxForm">
+
+            <div class="form-group">
+                <label for="income">Enter gross annual income 
+                    <div class="tooltip-container">
+                        <span class="tooltip-icon">
+                            <span>?</span>
+                        </span>
+                        <span class="tooltip-text">Total income earned in a year before any deductions. Must be a valid number greater than 0.</span>
+                    </div>
+                </label>
+                <div class="input-group">
+                    <input type="text" id="income" class="form-control" placeholder="Enter gross annual income">
+                    <div class="error-icon tooltip" id="incomeError" >!</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="extraIncome">Enter extra income
+                    <div class="tooltip-container">
+                        <span class="tooltip-icon">
+                            <span>?</span>
+                        </span>
+                        <span class="tooltip-text" >Any additional income earned, such as bonuses, interest, or freelance work. Must be a valid number.</span>
+                    </div>
+                </label>
+                <div class="input-group">
+                    <input type="text" id="extraIncome" class="form-control" placeholder="Enter extra income from other source">
+                    <div class="error-icon tooltip" id="extraIncomeError" >!</div>
+                </div>
+  
+            </div>
+
+            <div class="form-group">
+                <label for="age">Enter age group
+                    <div class="tooltip-container">
+                        <span class="tooltip-icon">
+                            <span>?</span>
+                        </span>
+                        <span class="tooltip-text">Your current age group.
+                        </span>
+                    </div>
+                </label>
+                <div class="input-group">
+                <select id="age" class="form-control">
+                    <option value="">Select age group</option>
+                    <option value="<40">&lt; 40</option>
+                    <option value=">=40&<60">≥ 40 &lt; 60</option>
+                    <option value=">=60">≥ 60</option>
+                </select>
+                <div class="error-icon tooltip" id="ageError">!</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="deductions">Enter total applicable deductions 
+                    <div class="tooltip-container">
+                        <span class="tooltip-icon">
+                            <span>?</span>
+                        </span>
+                        <span class="tooltip-text" title="">
+                            Amount subtracted from the total income to arrive at the taxable income. Must be a valid number. 
+                        </span>
+                    </div>
+                </label>
+                <div class="input-group">
+                    <input type="text" id="deductions" class="form-control" placeholder="Add total applicable deductions">
+                </div>
+                
+            </div>
+
+            <br>
+
+            <button type="button" id="calculateBtn" class="btn ">Submit</button>
+        </form>
+
+    </div>
+
+
+    <!-- Modal box of Popup show -->
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <h1>Your overall income will be</h1>
+            <h2 id="modaltotolIncome"></h2>
+            <p>after tax deductions</p>
+            <h2 id="modalIncome"></h2>
+            <button id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
